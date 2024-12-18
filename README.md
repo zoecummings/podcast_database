@@ -2,6 +2,11 @@
 This repository contains two major sections
 1. A tool used to scrape podcast data **specifically from [iHeartRadio](https://www.iheart.com/podcast/category/top-overall-132/)**
 2. A database to store the scraped podcast data
+## Project Motivation
+
+In the SNaPP Lab at William and Mary I am a part of a team looking into podcast data over time. After having solidified our research design and the scope of the project this semester, we have moved towards data collection. Our original data collection method involved manual recording of the audio and transcribing the collected mp3 files. Around half way through this semester we found that iHeartRadio had begun posting transcriptions for individual podcast episodes which opened the door for a new and more efficient data collection method. As I started working on creating the script to scrape the podcast information and transcriptions I realized I was often relying on the automation techniques and organization principles we had been learning this semester which is why I ultimately decided to continue my work on this data collection and storage for the DATA 440 final project. As well as improving the efficiency of my data collection code I also wanted to have detailed instructions for future lab members on how this can be replicated moving forward. For the non data science members I decided to have a database with the information and the option to download the data as a CSV file for overall usage for a range of data science skills. This gave an opportunity to spend more time learning about web scraping particulary for pages with more roadblocks such as a "see more" button. 
+
+You can see more about the motivation as well as the scope of the work for this class in the project proposal! 
 
 ## Transcription Web Scraper
 

@@ -95,7 +95,9 @@ Parameters:
 - start_url: The URL of the overall podcast page
 - pod_name: The name of the podcast.
 
+## Database
 
+The database is created and added to in the ```db_1.py``` file found in this repository. This podcast_data.db file is meant to be downloaded and used primarily. While you can use the db_1.py file and make edits to add additional data that is not the primary goal of this project, as specific team members for the SNaPP lab would be the ones adding data in based on sampling decisions. 
 
 
 

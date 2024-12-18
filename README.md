@@ -1,8 +1,8 @@
 # Podcast Data Scraper and Database
-This repository contains to major sections
+This repository contains two major sections
 1. A tool used to scrape podcast data **specifically from [iHeartRadio](https://www.iheart.com/podcast/category/top-overall-132/)**
 2. A database to store the scraped podcast data
-     - priliminary visualizations using this data
+
 ## Transcription Web Scraper
 
 ### First Steps

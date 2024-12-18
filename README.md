@@ -11,6 +11,7 @@ You can see more about the motivation as well as the scope of the work for this 
 ## Transcription Web Scraper
 
 ### First Steps
+**Clone this repository onto your own computer to ensure files are being accessed and saved from/to the correct places**
 
 Before using this code you will need to ensure you have met certain requirements.
 You will need to install these if you have not already, and then within the get_transcripts.py file them will be imported. 

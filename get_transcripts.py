@@ -16,7 +16,7 @@ def get_links(link: str, pod_name: str):
     driver.implicitly_wait(5)  # Increased implicit wait for better handling of load times
     driver.get(link)
 
-    output_filename = f"transcript_links_{pod_name}.txt"
+    output_filename = f"transcript_links/transcript_links_{pod_name}.txt"
     j = 0  # Initialize index for new links
     with open(output_filename, 'w') as file:
         while True:
@@ -98,7 +98,6 @@ def get_transcription(url : str):
 
 def process_links_from_file(filename : str, pod_name: str):
     podcasts = {}  # Dictionary to hold podcasts and their episodes
-
     with open(filename, 'r') as file:
         urls = file.readlines()
 
@@ -129,7 +128,7 @@ def process_links_from_file(filename : str, pod_name: str):
             print(f"Failed to fetch transcription for {url}.")
 
     # Save all podcasts to a JSON file
-    with open(f"podcast_data{pod_name}.json", 'w') as json_file:
+    with open(f"json_files/podcast_data{pod_name}.json", 'w') as json_file:
         json.dump(podcasts, json_file, indent=4)
 
     print("Finished processing all links.")
@@ -146,4 +145,6 @@ def complete_task(start_url :str, pod_name: str):
 # The line below shows an example of the function you can run and an input to test the above functionality 
 
 
-#complete_task('https://www.iheart.com/podcast/1119-the-bobby-bones-show-25100459/', pod_name = 'Bobby Bones Show' )
+#complete_task('https://www.iheart.com/podcast/1119-the-bobby-bones-show-25100459/', pod_name = 'Bobby Bones Test' )
+process_links_from_file('transcript_links/transcript_links_bobby_bones.txt', pod_name = 'Test' )
+
